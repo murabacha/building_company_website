@@ -1,0 +1,578 @@
+.asimovian-regular {
+  font-family: "Asimovian", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@keyframes fadeIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+.start{
+    background-color: rgb(28, 29, 29);
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    animation: fadeIn 2s forwards;
+}
+.start ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 0;
+}
+.start ul li{
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.start ul li a{
+    color: white;
+    text-decoration: none;
+}
+.start ul li:hover{
+    color: rgb(255, 136, 0);
+    font-size: 1.2em;
+    border-bottom: 3px solid rgb(250, 4, 4);
+}
+@keyframes header {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+#header{
+    background-color: rgb(28, 29, 29);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: header 2s forwards;
+}
+.headerlogo h1 a{
+    text-decoration: none;
+    color: rgb(224, 213, 213);
+    font-size: 24px;
+    font-weight: bold;
+}
+#headerlogoname{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(255, 136, 0);
+    letter-spacing: 6px;
+    display: block;
+    font-family: "Asimovian", sans-serif;
+}
+#headerlogoname2{
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(255, 136, 0);
+    letter-spacing: 8px;
+    display: block;
+    font-family: "Italianno", cursive;
+    margin-top: -30px;
+}
+.headerlinks ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    text-transform: uppercase;
+    list-style: none;
+    padding: 0;
+    letter-spacing: 1px;
+}
+.headerlinks ul li{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    color: rgb(226, 218, 218);
+}
+.headerlinks ul li a{
+    text-decoration: none;
+    color: rgb(226, 218, 218);
+}
+@keyframes hoverEffect {
+    to {
+        background-color: rgba(219, 216, 16, 0.5);
+        border-bottom: 3px solid rgb(250, 4, 4);
+   
+    }
+}
+.headerlinks ul li:hover{
+    animation: hoverEffect 1s forwards;
+    font-size: 1.2em;
+    animation-duration: 2s;
+}
+@keyframes changebackground {
+    0% {
+        background-image: url(images/construction-site-silhouettes.jpg);
+    }
+    10%{
+        background-image: url(images/crane-two-buildings-construction.jpg);
+    }
+    20% {
+        background-image: url(images/crop-architect-opening-blueprint.jpg);
+    }
+    30%{
+        background-image: url(images/pexels-500photos-com-15338-93400.jpg);
+    }
+    40% {
+        background-image: url(images/pexels-jamies-x-co-12236026.jpg);;
+    }
+    50%{
+        background-image: url(images/pexels-mcgzay-30661413.jpg);
+    }
+    60% {
+        background-image: url(images/pexels-mikael-blomkvist-8961259.jpg);
+    }
+    70%{
+        background-image: url(images/pexels-mukula-igavinchi-443985808-15496542.jpg);
+    }
+    80% {
+        background-image: url(images/pexels-rezwan-1078884.jpg);
+    }
+    90%{
+        background-image: url(images/pexels-rezwan-1116035.jpg);
+    }
+    100% {
+        background-image: url(images/pexels-sevenstormphotography-439416.jpg);
+    }
+
+}
+.introduction{
+    position: relative;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 520px;
+    animation:  changebackground 100s infinite;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.introduction::before{
+    content: "";
+    position: absolute;
+    top: 0;
+ 
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+@keyframes slidein {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.fancytext{
+    flex: 1;
+    margin-right: 20px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 2;
+    animation: slidein 2s forwards;
+}
+.fancytext h3{
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Asimovian", sans-serif;
+    z-index: 2;
+}
+#fancytextbutton{
+    margin-top: 20px;
+    padding: 20px 40px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(255, 136, 0);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Asimovian", sans-serif;
+    z-index: 2;
+    transform: translateX(50%);
+}
+@keyframes buttonhover {
+    to {
+        background-color: rgb(172, 238, 20);
+        color: black;
+        box-shadow:5px 5px 10px rgb(211, 3, 3);
+        padding: 25px 45px;
+    }
+}
+#fancytextbutton:hover{
+    animation: buttonhover 1s forwards;
+    font-size: 1.5em;
+}
+#fancytextspan1{
+    font-size: 70px;
+    font-weight: bold;
+    color: rgb(172, 238, 20);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-family: "Bungee", cursive;
+}
+#fancytextspan2{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: -20px;
+    font-family: "Italianno", cursive;
+    z-index: 2;
+}
+@keyframes slidein1 {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(-80px);
+        opacity: 1;
+    }
+}
+.fancytext1{
+    font-size: 30px;
+    color: red;
+    margin-top: 20px;
+    line-height: 40px;
+    font-family: "Asimovian", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transform: translateX(-80px);
+    z-index: 2;
+    animation: slidein1 2s forwards;
+}
+.about{
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.abouttext{
+
+   
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 800px;
+    
+}
+.abouttext h2{
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(106, 148, 9);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 40px;
+    transform: translateY(-40px);
+    font-family: "Asimovian", sans-serif;
+    border-bottom: 3px ridge rgb(106, 148, 9);
+}
+.abouttext p{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.681);
+    line-height: 30px;
+    margin-left: 40px;
+    transform: translateY(-40px);
+    font-family:  sans-serif;
+}
+@keyframes aboutbuttonhover {
+    to {
+        background-color: rgb(172, 238, 20);
+        color: black;
+        box-shadow:5px 5px 10px rgb(211, 3, 3);
+        padding: 20px 40px;
+    }
+}
+.aboutbuttons{
+    transform: translateX(15%);
+}
+#aboutbutton{
+    margin-left: 20px;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(255, 136, 0);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Asimovian", sans-serif;
+}
+#aboutbutton:hover{
+    animation: aboutbuttonhover 1s forwards;
+    font-size: 1.2em;
+}
+.aboutfancythings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 50px;
+    gap: 20px;
+}
+.aboutfancything{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-top: 40px;
+    border-left: 8px solid rgb(186, 205, 13);
+    
+    
+    
+}
+.aboutfancything h3{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 40px;
+    
+    font-family: "Asimovian", sans-serif;
+}
+.aboutfancything p{
+    font-size: 18px;
+    color: rgba(96, 92, 92, 0.576);
+    line-height: 25px;
+    margin-left: 40px;
+    margin-top: -10px;
+    font-family:  sans-serif;
+}
+.workingpart{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom right, rgb(28, 29, 29) 40%, rgb(0, 0, 0) 40%);
+}
+.workingpart h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 40px;
+    
+    font-family: "Asimovian", sans-serif;
+    border-bottom: 3px ridge rgb(106, 148, 9);
+    width: fit-content;
+}
+.workingpart p{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.781);
+    line-height: 30px;
+    margin-left: 40px;
+    
+    font-family:  sans-serif;
+    width: 80%;
+}
+.workingpartbuttons{
+    margin-top: 50px;
+}
+#workingpartbutton{
+    padding: 20px 40px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: white;
+    background-color: rgb(255, 136, 0);
+    border: none;
+    border-radius: 40px;
+    font-family: "Asimovian", sans-serif;
+    
+}
+@keyframes workingpartbuttonhover {
+    to {
+        background-color: rgb(172, 238, 20);
+        color: black;
+        box-shadow:5px 5px 10px rgb(211, 3, 3);
+        padding: 25px 45px;
+    }
+}
+
+#workingpartbutton:hover{
+    animation: workingpartbuttonhover 1s forwards;
+    ;
+}
+.ourwork{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom right, rgb(255, 255, 255) 40%, rgb(200, 200, 200) 40%);
+}
+.ourwork h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 40px;
+    
+    font-family: "Asimovian", sans-serif;
+    border-bottom: 3px ridge rgb(106, 148, 9);
+    width: fit-content;
+}
+.ourwork p{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.781);
+    line-height: 30px;
+    margin-left: 40px;
+    
+    font-family:  sans-serif;
+    width: 80%;
+    text-align: center;
+}
+.ourworkimagescontainer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 60px;
+  
+}
+.ourworkimages{
+    position: relative;
+    margin: 10px;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    
+}
+
+.ourworkimages::before{
+    content: "";
+    position: absolute;
+    top: 0;
+ 
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+.ourworkimages img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+    z-index: 1;
+
+}
+.ourworkimages:hover img{
+    animation: imagehover 2s forwards;
+    
+}
+.ourworkimages:hover  .imagescontent h3,
+.ourworkimages:hover  .imagescontent p{
+    animation: textcolorchange 1s forwards;
+}
+
+.imagescontent{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: none;
+    color: white;
+   
+    z-index: 3;
+    margin-left: 10px;
+    padding: 10px 0;
+    border-left: 3px solid rgb(255, 136, 0);
+}
+.imagescontent h3{
+   
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Asimovian", sans-serif;
+    padding-left: 20px;
+    
+
+}
+.imagescontent p{
+    
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+    text-align: start;
+    
+}
+@keyframes imagehover {
+    to {
+        transform: scale(1.1);
+       
+    }
+}
+@keyframes textcolorchange {
+   to{
+        color: rgb(255, 136, 0);
+    
+  
+   }
+}
