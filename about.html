@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Bungee&family=Italianno&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div class="start">
+        <ul>
+            <li><a href="news.html">NEWS/INSIGHTS</a></li>
+            <li><a href="contractors.html">SUBCONTRACTORS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            
+        </ul>
+    </div>
+    <header id="header">
+        <div class="headerlogo">
+            <h1>
+                <a href="index.html">
+                    <span id="headerlogoname">ROBERT</span>
+                    <span id="headerlogoname2">construction</span>
+                </a>
+            </h1>
+
+        </div>
+        <div class="headerlinks">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="work.html">OUR WORK</a></li>
+                <li><a href="approach.html">OUR APPROACH</a></li>
+                <li><a href="careers.html">CAREERS</a></li>
+            </ul>
+
+        </div>
+    </header>
+    <main>
+        <div class="herosection">
+            <h2>ABOUT ROBERT</h2>
+            <h1>Building a better future together</h1>
+        </div>
+        <style>
+            .herosection{
+                width: auto; height: 400px; margin: auto; text-align: left; font-size: 18px; line-height: 1.6;color: #555; padding: 20px 0;
+               background:
+                linear-gradient(to bottom right, rgb(0, 0, 0 , 0.5) 70%,  #FF6600 70%),
+                linear-gradient(to bottom left, rgba(0, 0, 0, 0.5) 80%,  rgba(255, 102, 0) 80%),
+                linear-gradient(to top right, rgba(0, 0, 0, 0.5) 70%,  #ff0000 70%);
+                
+                display: flex; flex-direction: column; justify-content: center; align-items: flex-start;
+                animation: slideIn 2s forwards; transform: translateX(-100%); opacity: 0;
+                animation-delay: 0.1s;
+            }   
+            .herosection h2{
+                color: rgb(248, 248, 248); font-size: 20px; font-weight: bold; margin-bottom: 10px; transform: translateX(30px);
+                animation: fadeIn 2s forwards; animation-delay: 1s; opacity: 0;
+                
+            }
+            .herosection h1{
+                font-size: 60px; font-weight: bold; margin-bottom: 20px; color: #FF6600 ; transform: translateX(100px);animation: fadeIn 2s forwards ;
+                animation-delay: 1.5s; opacity: 0;
+            }
+            @keyframes slideIn {
+                0% {
+                    transform: translateX(-100%);
+                    opacity: 0;
+                }
+                100% {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+            @keyframes fadeIn {
+                to {
+                    opacity: 1;
+                }
+            }
+        </style>
+        <div class="herosectiontext">
+            <p>
+                At ROBERT Construction, we are dedicated to transforming visions into reality through innovative construction solutions. 
+                With a commitment to excellence and a passion for building, we strive to create structures that not only meet but exceed 
+                our clients' expectations. Our team of experienced professionals works collaboratively to deliver projects on time and within budget, 
+                ensuring quality craftsmanship and sustainable practices at every stage. From residential developments to large-scale commercial ventures, 
+                ROBERT Construction is your trusted partner in building a better future together.
+            </p>
+        </div>
+        <style>
+            .herosectiontext{
+                width: auto; height: auto; margin: auto; text-align: left; font-size: 20px; line-height: 3;color: #1c1b1b; padding: 20px 0;padding-left: 40px;
+        }
+
+        </style>
+        <div class="ourpurpose">
+            <h2>OUR PURPOSE</h2>
+            <p>
+                At ROBERT Construction, our purpose is to build more than just structures; we aim to create lasting value for our clients, communities, and the environment. 
+                We are committed to delivering high-quality construction projects that enhance the way people live, work, and interact with their surroundings. 
+                Our focus on innovation, sustainability, and collaboration drives us to exceed expectations and set new standards in the construction industry. 
+                By fostering strong relationships with our clients and stakeholders, we strive to be a trusted partner in shaping a better future through responsible building practices.
+            </p>
+        </div>
+        <style>
+            .ourpurpose{
+                width: auto; height: auto; margin: auto; text-align: left; font-size: 20px; line-height: 3;color: #1c1b1b; padding: 20px 0;padding-left: 40px;
+                background: linear-gradient(to  bottom right, #113c02 80%, #e8c70c 80%,#e8c70c 80.5%, #113c02 80.5%),
+                            linear-gradient(to  top left, #113c02 20%, #e8c70c 20%,#e8c70c 20.5%, #113c02 20.5%); background-size: 100% 100%;
+                            background-repeat: no-repeat;
+        }.ourpurpose p{padding-right: 40px;width: 1000px; margin-left: 100px;font-size: 1.4em;font-weight: bold; line-height: 1.5; color: white;}
+        .ourpurpose h2{font-size: 30px; font-weight: bold; margin-bottom: 20px; color: #FF6600 ;}
+        </style>
+        <div class="ourcommitments">
+            <div class="commitments">
+                <div class="commitmentsbeginning">
+                    <h3>OUR COMMITMENTS</h3>
+                    <h1>We know that every decision has an impact</h1>
+                </div>
+                <p>Our commitments to safety, quality, sustainability and community stewardship ensure your lasting success.</p>
+            </div>
+            <div class="qualities">
+                <div class="quality">
+                    <img src="icons/safety.png" alt="safety">
+                    <h2>Safety</h2>
+                    <p>We prioritize the well-being of our team members, clients, and communities by adhering to the highest safety standards and practices on every project.</p>
+                </div>
+                <div class="quality">
+                    <img src="icons/quality.png" alt="quality">
+                    <h2>Quality</h2>
+                    <p>We are committed to delivering exceptional craftsmanship and attention to detail in every aspect of our work, ensuring that our projects meet and exceed client expectations.</p>
+                </div>
+                <div class="quality">
+                    <img src="icons/sustain.png" alt="sustainability">
+                    <h2>Sustainability</h2>
+                    <p>We integrate sustainable practices into our construction processes, minimizing environmental impact and promoting energy efficiency for a greener future.</p>
+                </div>
+                <div class="quality">
+                    <img src="icons/community.png" alt="community">
+                    <h2>Community</h2>
+                    <p>We believe in giving back to the communities we serve by supporting local initiatives, fostering economic growth, and creating spaces that enhance quality of life.</p>
+                </div>
+            </div>
+        </div>
+        <style>
+            .ourcommitments{
+                width: auto; height: auto; margin: auto; text-align: left; font-size: 20px; line-height: 1;color: #1c1b1b; padding: 20px 0;padding-left: 40px;
+                display: flex; flex-direction: column; }
+            .commitments{width: auto; height: auto; margin: auto; text-align: left; font-size: 20px; line-height: 1;color: #1c1b1b; padding: 20px 0;padding-left: 40px;
+                display: flex; flex-direction: row;  justify-content: space-between; }
+                .commitmentsbeginning{width: 600px; height: auto; margin: auto; text-align: left; font-size: 20px; line-height: 1;color: #1c1b1b; padding: 20px 0;padding-left: 40px;}
+                .commitmentsbeginning h3{font-size: 30px; font-weight: bold; margin-bottom: 10px; color: #FF6600 ; transform: translateX(-10%);}
+                .commitmentsbeginning h1{font-size: 60px; font-weight: bold; margin-bottom: 20px; color: #1c1b1b ; font-family:  "Asimovian", sans-serif;}
+                .commitments p{width: 600px; height: auto; margin-top: 50px; text-align: left; font-size: 25px; line-height: 2;color: #1c1b1b; padding: 20px 0;padding-left: 40px;
+                    font-weight: bold; width: 500px;}
+            .qualities{width: auto; height: auto; margin: auto; text-align: left; font-size: 20px; line-height: 1;color: #1c1b1b; padding: 20px 0;padding-left: 40px;
+                display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around; }
+            .quality{width: 400px; height: auto; margin: auto; text-align: left; font-size: 20px; line-height: 1;color: #1c1b1b; padding: 20px 0;padding-left: 40px;
+                display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 40px;}
+            .quality img{width: 80px; height: 80px; margin-bottom: 20px;}
+            .quality h2{font-size: 25px; font-weight: bold; margin-bottom: 10px; color: #FF6600 ;}
+            .quality p{font-size: 16px; line-height: 1.5; color: #555;}
+        </style>
+        <div class="imagessection">
+            <a href="images_section/pexels-davidmcbee-392031.jpg"></a><img src="images_section/pexels-davidmcbee-392031.jpg" alt="about1"></a>
+            <a href="images_section/pexels-igor-starkov-233202-1117452.jpg"><img src="images_section/pexels-igor-starkov-233202-1117452.jpg" alt="about2"></a>
+            <a href="images_section/pexels-liana-horodetska-5077625-27212207.jpg"><img src="images_section/pexels-liana-horodetska-5077625-27212207.jpg" alt="about3"></a>
+           <a href="images_section/pexels-mikael-blomkvist-8960947.jpg"> <img src="images_section/pexels-mikael-blomkvist-8960947.jpg" alt="about4"></a>
+           <a href="images_section/pexels-quentin-ecrepont-1148362-3818947.jpg"> <img src="images_section/pexels-quentin-ecrepont-1148362-3818947.jpg" alt="about1"></a>
+           <a href="images_section/pexels-rickyrecap-1662159.jpg"> <img src="images_section/pexels-rickyrecap-1662159.jpg" alt="about2"></a>
+           <a href="images_section/pexels-pixabay-162539.jpg"> <img src="images_section/pexels-pixabay-162539.jpg" alt="about3"></a>
+           <a href="images_section/pexels-yentl-jacobs-43020-157811.jpg"> <img src="images_section/pexels-yentl-jacobs-43020-157811.jpg" alt="about4"></a>
+        </div>
+        <style>
+            .imagessection{
+                width: auto; height: auto; margin: auto; text-align: left; font-size: 20px; line-height: 1;color: #1c1b1b; padding: 20px 0;padding-left: 40px;
+                display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around; }
+            .imagessection img{width: 300px; height: 200px; margin-bottom: 20px; border-radius: 10px; object-fit: cover;opacity: 0; animation: fadeIn 2s forwards;} 
+            .imagessection img:hover{animation: grow 2s forwards;}
+            @keyframes fadeIn {
+                to {
+                    opacity: 1;
+                }
+            }
+            @keyframes grow {
+                to {
+                    transform: scale(1.2);
+                    opacity: 1;
+                }
+            }
+        </style>
+        <div class="ourvision">
+            <div class="ourvisionstart">
+                <h1>OUR VISION</h1>
+                <p>
+                    We are always looking ahead while we apply vast experience and broad expertise to overcome your unique challenges, 
+                    exceed your expectations, and drive measurable value to your bottom line.
+                </p>
+            </div>
+            
+            <video controls> 
+                <source src="icons/020 - Shallow_vs_Deep_Copying_in_Python_-_Advanced_Python_20_-_Programming_Tutorial.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+        </div>
+        <style>
+            .ourvision{display: flex; flex-direction: column;flex-wrap: wrap;}
+            .ourvisionstart{width: auto; height: auto; margin: auto; text-align: left; font-size: 20px; line-height: 1;color: #1c1b1b; padding: 20px 0;padding-left: 40px;
+                display: flex; flex-direction: row; align-items: center; text-align: center; margin-bottom: 40px; justify-content: space-between;}
+                .ourvisionstart h1{font-size: 30px; font-weight: bold; margin-bottom: 20px; color: #FF6600 ;transform: translateX(-100px);
+                transform: translateY(-100px);}
+                .ourvisionstart p{width: 700px; height: auto; margin-top: 20px; text-align: left; font-size: 25px; line-height: 2;color: #1c1b1b; padding: 20px 0;padding-left: 40px;
+                    font-weight: bold; margin-left: 200px;}
+            .ourvision video{width: 1000px; height: 600px; margin: auto; border-radius: 0px; object-fit: cover; margin-bottom: 40px; margin-top: -40px; 
+            border: 10px solid green; border-radius: 3px;}
+        </style>
+        <div class="showingup">
+            <h2>HOW WE SHOW UP</h2>
+            <div class="showingupsections">
+                <div class="showingupsection">
+                    <img src="icons/partnership.png" alt="partnership">
+                    <div class="showingupsectioncontent">
+                        <h3>Partnership</h3>
+                        <p>We believe in building strong, collaborative relationships with our clients, subcontractors, and stakeholders to achieve shared success.</p>
+                        <button id="showupbutton">LEARN MORE</button>
+                    </div>
+                </div>
+                <div class="showingupsection" id="second">
+                    <img src="icons/excellence.png" alt="excellence">
+                    <div class="showingupsectioncontent">
+                        <h3>Excellence</h3>
+                        <p>We are committed to delivering the highest quality workmanship and service in every project we undertake.</p>
+                         <button id="showupbutton">LEARN MORE</button>
+                    </div>
+                   
+                </div>
+                <div class="showingupsection">
+                    <img src="icons/innovation.png" alt="innovation">
+                    <div class="showingupsectioncontent">
+                        <h3>Innovation</h3>
+                        <p>We embrace new technologies and methodologies to improve efficiency, sustainability, and outcomes for our clients.</p>
+                        <button id="showupbutton">LEARN MORE</button>
+                    </div>
+                    
+                </div>
+                <div class="showingupsection" id="second">
+                    <img src="icons/integrity.png" alt="integrity">
+                    <div class="showingupsectioncontent">
+                        <h3>Integrity</h3>
+                        <p>We conduct our business with honesty, accountability, and ethical practices at all times.</p>
+                        <button id="showupbutton">LEARN MORE</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <style>
+            .showingup{
+                display: flex; flex-direction: column; flex-wrap: wrap; align-items: center; text-align: center; margin-bottom: 40px; margin-top: 40px;
+            }
+            .showingup h2{font-size: 30px; font-weight: bold; margin-bottom: 20px; color: #FF6600 ;text-align: left; width: 100%;transform: translateX(10%);}
+            .showingupsections{width: auto; height: auto; margin: auto; text-align: left; font-size: 20px; line-height: 1;color: #1c1b1b; padding: 20px 0;padding-left: 40px;
+                display: flex; flex-direction: column; flex-wrap: wrap; justify-content: space-between; }
+            .showingupsection{width: auto; height: auto; margin: auto; text-align: left; font-size: 20px; line-height: 1;color: #1c1b1b; padding: 20px 0;padding-left: 40px;
+                display: flex; flex-direction: row; align-items: center; text-align: center; margin-bottom: 40px; justify-content: space-around;}
+            .showingupsection img{width: 300px; height: 300px; margin-right: 20px; margin-left: 100px;}
+            .showingupsectioncontent{width: 600px; height: auto; margin: auto; text-align: left; font-size: 20px; line-height: 1;color: #1c1b1b; padding: 20px 0;padding-left: 40px;}
+            .showingupsectioncontent h3{font-size: 35px; font-weight: bold; margin-bottom: 10px; color: #FF6600 ;}
+            .showingupsectioncontent p{font-size: 20px; line-height: 1.5; color: #555; margin-bottom: 20px;}
+            #showupbutton{background-color: white; color: black; border: 2px solid #FF6600; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px;}
+            #showupbutton:hover{animation: showuphover 1s forwards;}
+            #second{flex-direction: row-reverse;}
+            @keyframes showuphover {
+                to {
+                    transform: scale(1.2);
+                    background-color: #FF6600;
+                    color: white;
+                }
+            }
+        </style>
+        <div class="thenumbers">
+            <h2>BY THE NUMBERS</h2>
+            <div class="numbers">
+                <div class="number">
+                    <h1>50+</h1>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="number">
+                    <h1>200+</h1>
+                    <p>Completed Projects</p>
+                </div>
+                <div class="number">
+                    <h1>100%</h1>
+                    <p>Client Satisfaction Rate</p>
+                </div>
+                <div class="number">
+                    <h1>sh12.3B+</h1>
+                    <p>Annual construction volume</p>
+                </div>
+                 <div class="number">
+                    <h1>sh18.6M</h1>
+                    <p>Donated to charity organisations</p>
+                </div>
+                 <div class="number">
+                    <h1>130</h1>
+                    <p>Projects underway</p>
+                </div>
+               
+            </div>
+        </div>
+        <style>
+            .thenumbers{
+                width: auto; height: auto; margin: auto; text-align: left; font-size: 20px; line-height: 1;color: #1c1b1b; padding: 20px 0;padding-left: 40px;
+                display: flex; flex-direction: column;   margin-bottom: 0px; margin-top: 40px; background-color: #1c1b1b;
+            }
+            .thenumbers h2{font-size: 30px; font-weight: bold; margin-bottom: 20px; color: #FF6600 ;text-align: left; width: 100%;transform: translateX(10%);}
+            .numbers{width: auto; height: auto; margin: auto; text-align: left; font-size: 20px; line-height: 1;color: #1c1b1b; padding: 20px 0;padding-left: 40px;
+                display: flex; flex-direction: row; flex-wrap: wrap;  }
+            .number{width: 300px; height: auto; margin: auto; text-align: center; font-size: 20px; line-height: 1;color: #1c1b1b; padding: 20px 0;padding-left: 40px;
+                display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 40px;}
+                .number h1{font-size: 80px; font-weight: bold; margin-bottom: 10px; color: #FF6600 ;}
+                .number p{font-size: 20px; line-height: 1.5; color: whitesmoke;}
+        </style>
+        <div class="owners">
+            <div class="partners">
+                <h1>Your next-generation construction partners</h1>
+                <p>
+                    As employee owners we approach your business like we approach ours – with dedication, care and a commitment to doing things right. 
+                    We are all personally invested in your success, every step of the way.
+                </p>
+            </div>
+            <div class="managers">
+                <div class="managersinfo">
+                   <div class="managersinfotext">
+                        <h1>Robert Thuo</h1>
+                        <h3>President and CEO</h3>
+                        <p>
+                        As vice president and general manager of PCL Solar, Andrew has overall operational responsibility for all solar energy projects 
+                        undertaken by PCL. With 18 years of PCL experience and more than a decade in solar, Andrew is passionate about the renewable 
+                        energy industry and holds himself and his team to the highest ethical standards with a commitment to engaging and benefiting 
+                        all communities we serve.
+                        </p>
+                    </div>
+                    <div class="managersinfoimage">
+                        <img src="icons/president.png" alt="manager1">
+                    </div>
+                </div>
+                <div class="managersinfo">
+                   <div class="managersinfotext">
+                        <h1>Rigathi Gachagua</h1>
+                        <h3>Operations Manager</h3>
+                        <p>
+                        As vice president and general manager of PCL Solar, Andrew has overall operational responsibility for all solar energy projects 
+                        undertaken by PCL. With 18 years of PCL experience and more than a decade in solar, Andrew is passionate about the renewable 
+                        energy industry and holds himself and his team to the highest ethical standards with a commitment to engaging and benefiting 
+                        all communities we serve.
+                        </p>
+                    </div>
+                    <div class="managersinfoimage">
+                        <img src="icons/director.png" alt="manager1">
+                    </div>
+
+                </div>
+                <div class="managersinfo">
+                    <div class="managersinfotext">
+                        <h1>William Kasingo</h1>
+                        <h3>Managing Director</h3>
+                        <p>
+                        As vice president and general manager of PCL Solar, Andrew has overall operational responsibility for all solar energy projects 
+                        undertaken by PCL. With 18 years of PCL experience and more than a decade in solar, Andrew is passionate about the renewable 
+                        energy industry and holds himself and his team to the highest ethical standards with a commitment to engaging and benefiting 
+                        all communities we serve.
+                        </p>
+                    </div>
+                   
+                    <div class="managersinfoimage">
+                        <img src="icons/manager.png" alt="manager1">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <style>
+            .owners{
+                width: auto; height: 900px; margin: auto; text-align: left; font-size: 20px; line-height: 1;color: #1c1b1b; padding: 20px 0;padding-left: 40px;
+                display: flex; flex-direction: column;   margin-bottom: 40px; margin-top: 0px; background-color: #f4f4f4;position: relative;overflow: hidden;
+            }
+            .partners{width: auto; height: auto; margin: auto; text-align: left; font-size: 20px; line-height: 1;color: #1c1b1b; padding: 20px 0;padding-left: 40px;
+                display: flex; flex-direction: row; flex-wrap: wrap; margin-top: 15%;}
+                .partners h1{font-size: 30px; font-weight: bold; margin-bottom: 20px; color: #FF6600 ; width: 400px; transform: translateY(-50px);}
+                .partners p{width: 700px; height: auto; margin-top: 0px; text-align: left; font-size: 25px; line-height: 1.5;color: #1c1b1b; padding: 20px 0;padding-left: 40px;
+                    font-weight: bold; transform: translateY(-20px);}
+            .managersinfo{position: absolute; top: 0; left: 0; width: 100%;opacity: 0;animation:fadeslider 24s infinite; transform: translateY(160%); display: flex;
+             flex-direction: row; align-items: center; text-align: center; margin-bottom: 40px; justify-content: space-around; background-color: #acacac3d; padding: 20px 0;
+            width: 90%;margin-left: 70px; margin-right: auto;}
+            .managersinfotext{width: 600px; height: auto; margin: auto; text-align: left; font-size: 20px; line-height: 1;color: #1c1b1b; padding: 20px 0;padding-left: 40px;}
+            .managersinfotext h1{font-size: 35px; font-weight: bold; margin-bottom: 10px; color: #FF6600 ;}
+            .managersinfotext h3{font-size: 25px; font-weight: bold; margin-bottom: 10px; color: #1c1b1b ;}
+            .managersinfotext p{font-size: 16px; line-height: 1.5; color: #555;}
+            .managersinfoimage{width: 300px; height: 300px; margin-right: 20px; margin-left: 100px;}
+            .managersinfoimage img{width: 300px; height: 300px; border-radius: 50%; object-fit: cover;}
+             .managersinfo:nth-child(1){animation-delay: 0s;}
+            .managersinfo:nth-child(2){animation-delay: 8s;}    
+            .managersinfo:nth-child(3){animation-delay: 16s;}
+            @keyframes fadeslider {
+                0% {opacity: 0;}
+                10% {opacity: 1;}
+                30% {opacity: 1;}
+                40% {opacity: 0;}
+                100% {opacity: 0;}
+            }
+        </style>
+        <div class="ourhistory">
+            <h1>OUR HISTORY</h1>
+            <div class="ourhistorypart">
+                <p>
+                    From humble roots to shaping the future of construction, learn more about PCL’s history of proven performance and innovation by 
+                    visiting our interactive timeline.
+                </p>
+                <a href="">View Our Timeline <img src="icons/next.png" width="10px" height="10px"></a>
+            </div>
+            <div class="ourhistoryimage">
+                <img src="" alt="">
+                <div class="ourhistorytext">
+                    <span id="our">OUR</span>
+                    <span id="story">STORY</span>
+                    <span id="time">2000 to Today</span>
+                </div>
+            </div>
+        </div>
+        <div class="awards">
+            <h1>AWARDS AND ACCOLADES</h1>
+            <div class="awarditems">
+                <div class="award">
+                    <img src="" alt="">
+                    <h2></h2>
+                </div>
+                <div class="award">
+                    <img src="" alt="">
+                    <h2></h2>
+                </div>
+                <div class="award">
+                    <img src="" alt="">
+                    <h2></h2>
+                </div>
+                <div class="award">
+                    <img src="" alt="">
+                    <h2></h2>
+                </div>
+                <div class="award">
+                    <img src="" alt="">
+                    <h2></h2>
+                </div>
+                <div class="award">
+                    <img src="" alt="">
+                    <h2></h2>
+                </div>
+                 <div class="award">
+                    <img src="" alt="">
+                    <h2></h2>
+                </div>
+                 <div class="award">
+                    <img src="" alt="">
+                    <h2></h2>
+                </div>
+            </div>
+            
+        </div>
+        <div class="ethics">
+            <img src="" alt="">
+            <div class="ethicstext">
+                <h1>ETHICS AND COMPLIANCE</h1>
+                <p>
+                    At ROBERT Construction, we are committed to conducting our business with the highest standards of ethics and integrity. 
+                    Our Ethics and Compliance program is designed to ensure that all employees, subcontractors, and partners adhere to legal 
+                    and regulatory requirements, as well as our internal policies and values. We believe that ethical behavior is essential 
+                    to building trust with our clients, communities, and stakeholders. Through ongoing training, transparent communication, 
+                    and a culture of accountability, we strive to create a workplace where everyone feels empowered to do the right thing.
+                </p>
+                <a href="">LEARN MORE <img src="icons/next.png" width="10px" height="10px"></a>
+            </div>
+        </div>
+            
+        <div class="worktogether">
+            <h1>LET'S WORK TOGETHER</h1>
+            <p>
+                Whether you're looking to start a new project, explore career opportunities, or learn more about our services, 
+                we're here to help. Contact us today to discuss how ROBERT Construction can bring your vision to life.
+            </p>
+            <div class="worktogetherbuttons">
+                <button class="worktogetherbutton">build with us</button>
+                <button class="worktogetherbutton">build with us</button>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+            <div class="footerlogo">
+                <h1>
+                    <a href="index.html">
+                        <span id="footerlogoname">ROBERT</span>
+                        <span id="footerlogoname2">construction</span>
+                    </a>
+                </h1>
+    
+            </div>
+            <div class="footerlinks">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="work.html">OUR WORK</a></li>
+                    <li><a href="approach.html">OUR APPROACH</a></li>
+                    <li><a href="careers.html">CAREERS</a></li>
+                    <li><a href="news.html">NEWS/INSIGHTS</a></li>
+                    <li><a href="contractors.html">SUBCONTRACTORS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+    
+            </div>
+
+           
+            
+    </footer>
+        <div class="lastline">
+            <div class="lastlinestart">
+                <p id="p1">&copy; 2024 ROBERT Construction. All rights reserved.</p>
+                 
+                <p id="p2">designed by @<a href="">  Robert</a></p>
+
+
+            </div>
+            <div class="footersocials">
+                <a href="https://www.facebook.com/KenyanMemes254/"><img src="icons/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/_kenyan.memes/"><img src="icons/instagram.png" alt="instagram"></a>
+                <a href="https://x.com/KenyanmemesO"><img src="icons/twitter.png" alt="twitter" id="twitter"></a>
+                <a href="https://ke.linkedin.com/in/memes-kenya-964b58313"><img src="icons/linkedin.png" alt="linkedin"></a>
+                <a href="https://www.youtube.com/watch?v=DO9fP9me6JQ"><img src="icons/youtube.png" alt="youtube"></a>
+            
+               
+    
+            </div>
+            
+                
+        </div>
+    
+</body>
+</html>
