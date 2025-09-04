@@ -45,6 +45,8 @@
             <h1>Building a better future together</h1>
         </div>
         <style>
+          
+
             .herosection{
                 width: auto; height: 400px; margin: auto; text-align: left; font-size: 18px; line-height: 1.6;color: #555; padding: 20px 0;
                background:
@@ -385,7 +387,7 @@
 
         </div>
         <style>
-            .owners{
+            .owners{border: 3px solid #FF6600;
                 width: auto; height: 900px; margin: auto; text-align: left; font-size: 20px; line-height: 1;color: #1c1b1b; padding: 20px 0;padding-left: 40px;
                 display: flex; flex-direction: column;   margin-bottom: 40px; margin-top: 0px; background-color: #f4f4f4;position: relative;overflow: hidden;
             }
@@ -415,16 +417,21 @@
             }
         </style>
         <div class="ourhistory">
-            <h1>OUR HISTORY</h1>
-            <div class="ourhistorypart">
-                <p>
-                    From humble roots to shaping the future of construction, learn more about PCL’s history of proven performance and innovation by 
-                    visiting our interactive timeline.
-                </p>
-                <a href="">View Our Timeline <img src="icons/next.png" width="10px" height="10px"></a>
+            <div class="ourhist">
+                <h1>OUR HISTORY</h1>
+                <div class="ourhistorypart">
+                    <p>
+                        From humble roots to shaping the future of construction, learn more about PCL’s history of proven performance and innovation by 
+                         visiting our interactive timeline.
+                    </p>
+                    <a href="">View Our Timeline <img src="icons/next.png" width="20px" height="20px"></a>
+                </div>
+
             </div>
+            
             <div class="ourhistoryimage">
-                <img src="" alt="">
+                
+                
                 <div class="ourhistorytext">
                     <span id="our">OUR</span>
                     <span id="story">STORY</span>
@@ -432,58 +439,140 @@
                 </div>
             </div>
         </div>
+        <style>
+            .ourhistory {display: flex; flex-direction: column; border: 3px solid #FF6600}
+            .ourhist {display: flex; flex-direction: row; flex-wrap: wrap;}
+            .ourhistorypart{width: 700px; height: auto; margin-top: 20px; text-align: left; font-size: 25px; line-height: 1.5;color: #1c1b1b; padding: 20px 0;padding-left: 40px;
+                    font-weight: bold; margin-left: 200px;}
+            .ourhistorypart p{width: 700px; height: auto; margin-top: 20px; text-align: left; font-size: 25px; line-height: 1.5;color: #1c1b1b; padding: 20px 0;padding-left: 40px;
+                    font-weight: bold; margin-left: 50px;}
+            .ourhist h1{font-size: 30px; font-weight: bold; margin-bottom: 10px}
+            .ourhistorypart a{text-decoration: none; color: #FF6600; margin-left: 150px; font-weight: bold;}
+            .ourhistorypart a:hover{animation: linkhover 2s forwards;}
+
+            .ourhistoryimage{position: relative; overflow: hidden; width: 80%; height: 500px; margin: auto; border-radius: 0px; object-fit: cover; margin-bottom: 40px; margin-top: 40px; 
+             border-radius: 3px; background-image: url(images/crane-two-buildings-construction.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;
+            display: flex;   margin-bottom: 40px; 
+            }
+            .ourhistoryimage::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.6);
+                z-index: 1;
+            }
+            #our{margin-left: 200px; transform: translateY(100px); z-index: 2; position: absolute; font-size: 4em; font-weight: bold; color: whitesmoke;
+            border-left: 3px solid #ff6600; padding-left: 10px;}
+            #story{margin-left: 300px; transform: translateY(190px); z-index: 2; position: absolute; font-size: 7em; font-weight: bold; color: #ff6600;
+            border-left: 3px solid #ff6600; padding-left: 10px;}
+            #time{margin-left: 400px; transform: translateY(330px); z-index: 2; position: absolute; font-size: 3em; font-weight: bold; color: whitesmoke;
+            border-left: 3px solid #ff6600; padding-left: 10px;}
+            .ourhistorytext{position: absolute; top: 0; left: 0; width: 100%;
+            } 
+            @keyframes linkhover {
+                to {
+                    transform: scale(1.1);
+                    text-decoration: underline;
+                    
+                }
+            }
+              
+            
+        </style>
         <div class="awards">
             <h1>AWARDS AND ACCOLADES</h1>
             <div class="awarditems">
                 <div class="award">
-                    <img src="" alt="">
-                    <h2></h2>
+                    
+                    <img src="awards/project.png" alt="Top Project Award">
+                    <h2>Top Project of the Year</h2>
                 </div>
                 <div class="award">
-                    <img src="" alt="">
-                    <h2></h2>
+                   
+                    <img src="awards/safety.png" alt="Safety Excellence Award">
+                    <h2>Safety Excellence</h2>
                 </div>
                 <div class="award">
-                    <img src="" alt="">
-                    <h2></h2>
+                    
+                    <img src="awards/community.png" alt="Community Builder Award">
+                    <h2>Community Builder</h2>
                 </div>
                 <div class="award">
-                    <img src="" alt="">
-                    <h2></h2>
+                    
+                    <img src="awards/green.png" alt="Green Construction Award">
+                    <h2>Green Construction</h2>
                 </div>
                 <div class="award">
-                    <img src="" alt="">
-                    <h2></h2>
+                    
+                    <img src="awards/innovation.png" alt="Innovation in Construction Award">
+                    <h2>Innovation in Construction</h2>
                 </div>
                 <div class="award">
-                    <img src="" alt="">
-                    <h2></h2>
+                    
+                    <img src="awards/satisfaction.png" alt="Client Satisfaction Award">
+                    <h2>Client Satisfaction</h2>
                 </div>
                  <div class="award">
-                    <img src="" alt="">
-                    <h2></h2>
+                   
+                    
+                    <img src="awards/commercial.png" alt="Best Commercial Project Award">
+                    <h2>Best Commercial Project</h2>
                 </div>
                  <div class="award">
-                    <img src="" alt="">
-                    <h2></h2>
+                    
+                    <img src="awards/craftsmanship.png" alt="Quality Craftsmanship Award">
+                    <h2>Quality Craftsmanship</h2>
                 </div>
             </div>
             
         </div>
+        <style>
+            .awards{border: 3px solid #FF6600;
+                width: 100%; display: flex; flex-direction: column;}
+                .awards h1{font-size: 30px; font-weight: bold; margin-bottom: 20px; color: #FF6600 ;text-align: left; width: 100%;transform: translateX(10%);}
+            .awarditems{ font-size: 20px; display: flex;flex-direction: row; flex-wrap: wrap; justify-content: space-around;}
+            .award{width: 250px; height: 300px; margin: auto; text-align: left; font-size: 20px; line-height: 1;color: #1c1b1b; padding: 20px 0;padding-left: 40px;
+                display: flex; flex-direction: column; transform: translateX(20%);}
+            .award img{width: 100px; height: 100px; margin-bottom: 20px}
+            .award h2{font-size: 1.1em; font-weight: bold; margin-bottom: 10px; color: #FF6600 ;}
+        </style>
         <div class="ethics">
-            <img src="" alt="">
+            
+            <img src="images_section/pexels-liana-horodetska-5077625-27212207.jpg" alt="Ethics and Compliance">
             <div class="ethicstext">
                 <h1>ETHICS AND COMPLIANCE</h1>
                 <p>
                     At ROBERT Construction, we are committed to conducting our business with the highest standards of ethics and integrity. 
                     Our Ethics and Compliance program is designed to ensure that all employees, subcontractors, and partners adhere to legal 
-                    and regulatory requirements, as well as our internal policies and values. We believe that ethical behavior is essential 
-                    to building trust with our clients, communities, and stakeholders. Through ongoing training, transparent communication, 
-                    and a culture of accountability, we strive to create a workplace where everyone feels empowered to do the right thing.
+                    and regulatory requirements, as well as our internal policies and values.
                 </p>
-                <a href="">LEARN MORE <img src="icons/next.png" width="10px" height="10px"></a>
+                <a href=""><button>LEARN MORE</button> </a>
             </div>
         </div>
+        <style>
+            .ethics{
+                width: 100%;  text-align: left; font-size: 20px; display: flex; flex-direction: row; border: 3px solid #FF6600 }
+            .ethics img{width: 400px; height: 600px;  border-radius: 0px; object-fit: cover; 
+            border: none; margin-left: 20px; margin-right: 20px; margin-bottom: 40px; margin-top: 40px; transform: translateX(40%);
+             border-radius: 3px;}
+            .ethicstext{width: 700px; margin-top: 20px; text-align: left; font-size: 25px; display: flex; flex-direction: column; line-height: 1.5;color: #1c1b1b; padding: 20px 0;padding-left: 40px;
+                    font-weight: bold; margin-left: 200px; border: 3px solid #FF6600}
+            .ethicstext p{width: 700px; height: auto; margin-top: 20px; text-align: left; font-size: 20px; line-height: 1.5;color: #1c1b1b6a; padding: 20px 0;padding-left: 40px;
+                    font-weight: bold; margin-left: -100px;}
+            .ethicstext button{background-color: white; color: black; border: 2px solid #FF6600; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px;
+                    transform: translateX(70%);}
+            @keyframes showuphover1 {
+                to {transform: scale(1.4),translateX(70%); background-color: #FF6600; color: white;}
+            }
+            .ethicstext button:hover{animation: showuphover1 1s forwards;}   
+            
+            .ethicstext h1{font-size: 30px; font-weight: bold; margin-bottom: 10px; color: #FF6600 ; margin-top: 100px;}
+         
+           
+        </style>
             
         <div class="worktogether">
             <h1>LET'S WORK TOGETHER</h1>
@@ -492,11 +581,26 @@
                 we're here to help. Contact us today to discuss how ROBERT Construction can bring your vision to life.
             </p>
             <div class="worktogetherbuttons">
-                <button class="worktogetherbutton">build with us</button>
-                <button class="worktogetherbutton">build with us</button>
+                
+                <a href="contact.html"><button class="worktogetherbutton1">BUILD WITH US</button></a>
+                <a href="careers.html"><button class="worktogetherbutton2">WORK WITH US</button></a>
 
             </div>
         </div>
+        <style>
+            .worktogether{
+                width: auto; height: auto; margin: auto; text-align: left; font-size: 20px; }
+            .worktogether h1{font-size: 30px; font-weight: bold ;color: #FF6600 ;text-align: left; width: 100%;transform: translateX(10%);}
+            .worktogether p{width: 700px; font-weight: normal;letter-spacing: 3px; margin-top: 20px; text-align: left; font-size: 25px; line-height: 1.5;color: #1c1b1b; padding: 20px 0;padding-left: 40px;
+                    font-weight: bold; margin-left: 200px;}
+            .worktogetherbuttons{padding: 10px 20px; background-color: white; color: #FF6600;  border-radius: 5px; cursor: pointer; font-size: 16px;
+             display: flex; flex-direction: row; justify-content: left; align-items: center; margin-top: 20px;}
+            .worktogetherbutton{background-color: white; color: black; border: 2px solid #FF6600; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px;}
+            .worktogetherbutton:hover{animation: showuphover 1s forwards;}
+           
+
+
+        </style>
     </main>
     <footer>
             <div class="footerlogo">
