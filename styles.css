@@ -1,3 +1,11 @@
+html, body {
+  overflow-x: hidden;
+}
+img, video {
+  max-width: 100%;
+}
+
+
 .asimovian-regular {
   font-family: "Asimovian", sans-serif;
   font-weight: 400;
